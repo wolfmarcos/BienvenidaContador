@@ -56,14 +56,7 @@ function contador(f) {
   
     let n = document.createElement("h1").appendChild(document.createTextNode("contador sesion: " +cantSesion))
     n.className="colo"
-    //  let texto2 = document.createTextNode("contador sesion: " +cantSesion)
-    //  let h1 = document.createTextNode(h1).appendChild(texto2)
-    setInterval(() => {
-       
-        // f(texto2 = document.createTextNode("contador sesion: " +cantSesion++)),console.log(i++);
-    }, 1000)
 
-    f(n)
 
     let nuevaEtiqueta = document.createElement("texto")
     
@@ -72,9 +65,21 @@ function contador(f) {
 
     contenedor.append(nuevaEtiqueta);
 
+   
+    setInterval(() => {
+         contenedor.classList.toggle("colo")
+        
+    }, 1000)
+
+    f(n)
+//  let texto2 = document.createTextNode("contador sesion: " +cantSesion)
+    //  let h1 = document.createTextNode(h1).appendChild(texto2)
+ 
+
 
     localStorage.setItem("local", cantVisitas);
     sessionStorage.setItem("session", cantSesion);
+    // f(texto2 = document.createTextNode("contador sesion: " +cantSesion++)),console.log(i++);
 
 }
 
