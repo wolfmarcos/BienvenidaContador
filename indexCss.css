@@ -1,0 +1,18 @@
+body{ min-height: 100vh;}
+
+main{
+    background-color: aqua;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+max-width: 20vw;
+    margin: 0 40vw;
+    flex-direction: column;
+    
+}
+#paragraph:hover{
+   box-shadow: 1PX 1PX 2px rgb(47, 39, 39);
+}
+ .colo{
+    background-color: brown;
+ }
